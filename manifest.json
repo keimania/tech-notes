@@ -1,0 +1,18 @@
+{
+  "name": "소프트웨어 엔지니어링 올인원",
+  "short_name": "기술노트",
+  "description": "컴퓨터 기초 원리부터 최신 클라우드·인공지능 아키텍처까지 1권으로 마스터하는 모바일 기술 도서",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

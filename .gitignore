@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary deploy script
+deploy_github.py
+
+# OS generated
+.DS_Store
+Thumbs.db

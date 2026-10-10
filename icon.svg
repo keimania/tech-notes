@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="512" height="512" rx="112" fill="url(#grad)" />
+  
+  <!-- Book Spine / Base -->
+  <path d="M112 144 C112 128 128 116 144 116 L368 116 C384 116 400 128 400 144 L400 376 C400 392 384 404 368 404 L144 404 C128 404 112 392 112 376 Z" fill="#1e3a8a" opacity="0.35" transform="translate(0, 12)" />
+  
+  <!-- Book Pages -->
+  <path d="M120 136 C120 122 134 112 148 112 L248 112 C252 112 256 116 256 120 L256 384 C256 388 252 392 248 392 L148 392 C134 392 120 380 120 366 Z" fill="url(#pageGrad)" />
+  <path d="M392 136 C392 122 378 112 364 112 L264 112 C260 112 256 116 256 120 L256 384 C256 388 260 392 264 392 L364 392 C378 392 392 380 392 366 Z" fill="#e2e8f0" />
+  
+  <!-- Code bracket emblem inside book -->
+  <path d="M190 200 L156 240 L190 280" stroke="#2563eb" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M322 200 L356 240 L322 280" stroke="#2563eb" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M272 190 L240 290" stroke="#3b82f6" stroke-width="12" stroke-linecap="round" fill="none" />
+  
+  <!-- Subtle bookmark -->
+  <path d="M236 112 L276 112 L276 170 L256 154 L236 170 Z" fill="#ef4444" />
+</svg>
