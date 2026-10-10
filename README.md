@@ -41,7 +41,7 @@
 6. 약 30초 후 상단에 생성된 웹사이트 주소(예: `https://jamingoo83.github.io/tech-notes/`)가 표시되며, 스마트폰으로 접속하시면 즉시 책을 읽으실 수 있습니다!
 
 ### 방법 2. GitHub Actions 자동 배포
-- 저장소 내 [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)이 이미 설정되어 있으므로, `Settings` $\rightarrow$ `Pages` $\rightarrow$ `Source`에서 **`GitHub Actions`**를 선택하시면 커밋할 때마다 자동으로 최신 버전이 무중단 배포됩니다.
+- 저장소 내 [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)이 이미 설정되어 있으므로, `Settings` → `Pages` → `Source`에서 **`GitHub Actions`**를 선택하시면 커밋할 때마다 자동으로 최신 버전이 무중단 배포됩니다.
 
 ---
 

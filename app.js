@@ -261,8 +261,9 @@
 
     document.title = `${partNum}. ${cleanTitle} | 소프트웨어 엔지니어링 올인원`;
 
+    // Clean LaTeX Math & Raw Syntax Symbols
+    let processedContent = cleanLatexSymbols(part.content);
     // Process Alert Callouts in raw markdown
-    let processedContent = part.content;
     processedContent = transformAlertBoxes(processedContent);
 
     // Render Markdown
@@ -286,6 +287,36 @@
 
     // Scroll to Top
     window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+
+  // Clean raw LaTeX math symbols into clean Unicode
+  function cleanLatexSymbols(text) {
+    if (!text) return '';
+    return text
+      .replace(/\$(?:\\rightarrow|\\to)\$/g, '→')
+      .replace(/\\rightarrow/g, '→')
+      .replace(/\\to/g, '→')
+      .replace(/\\leftarrow/g, '←')
+      .replace(/\\gets/g, '←')
+      .replace(/\\leftrightarrow/g, '↔')
+      .replace(/\$\\times\$/g, '×')
+      .replace(/\\times/g, '×')
+      .replace(/\$\\approx\$/g, '≈')
+      .replace(/\\approx/g, '≈')
+      .replace(/\$\\le\$/g, '≤')
+      .replace(/\\le/g, '≤')
+      .replace(/\$\\ge\$/g, '≥')
+      .replace(/\\ge/g, '≥')
+      .replace(/\$\\neq\$/g, '≠')
+      .replace(/\\neq/g, '≠')
+      .replace(/\$\\sim\$/g, '~')
+      .replace(/\\sim/g, '~')
+      .replace(/\$\\mu s\$/g, 'μs')
+      .replace(/\$\\mu\$/g, 'μ')
+      .replace(/\\mu s/g, 'μs')
+      .replace(/\\mu/g, 'μ')
+      .replace(/\\dots|\\ldots/g, '...')
+      .replace(/\$([A-Za-z0-9_+\-/*=(). ]+)\$/g, '$1');
   }
 
   // Transform GitHub Markdown Alert Callouts
